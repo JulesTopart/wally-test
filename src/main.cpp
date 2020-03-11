@@ -1,4 +1,3 @@
-#include <Arduino.h>
 #include <Wally.h>
 
 Wally robot;
@@ -9,6 +8,8 @@ void setup() {
 }
 
 void loop() {
-  robot.isIRDataReceived();
   // put your main code here, to run repeatedly:
+  robot.reculer(100);
+  robot.avancer(100);
+  robot.stop();
 }
